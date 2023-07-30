@@ -1,0 +1,186 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: Regular;
+}
+
+.navbar{
+  background-color: teal;
+  color: #FFFF;
+  height: 80px;
+  text-align: center;
+ 
+  
+}
+.navbar ul{
+  overflow:auto
+  
+}
+
+.navbar li{
+  
+  float: left;
+  list-style: none;
+  padding: 25px 3px;
+  
+  margin: 13px 40px;
+}
+.navbar li a{
+  
+  padding: 3px 5px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  align-items: center;
+  
+}
+.navbar li a:hover{
+  
+  border-radius: 10px;
+    color: black;
+    background-color: rgb(194, 244, 244);
+    padding:5px;
+}
+.navbar ol{
+  
+  float: right;
+  list-style: none;
+  padding: 25px 3px;
+  margin: 13px 40px;
+  
+  
+  
+}
+.navbar ol a{
+  text-decoration: none;
+  color: #FFFF;
+  width: 300px;
+  text-decoration: underline;
+  
+  font-size: 20px;
+  
+  align-items: center;
+}
+
+.navbar ol a:hover{
+  
+  font-size: 22px;
+}
+
+
+
+
+body{
+  background-image: url("bg3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing:border-box;
+  font-family: Regular;
+}
+
+
+.cover{
+    width: 900px;
+    height: 300px;
+    margin-top: 160px;
+    display: flex;
+    margin-left: 100px;
+    
+}
+
+.box{
+    width: 380px;
+    height: 330px;
+    margin: 20px;
+    left: 140px;
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+    text-align: center;
+    border-radius: 5px;
+    background-color:teal;
+    overflow: hidden;
+    position: relative;
+
+}
+
+img{
+    width: 280px;
+    height: 240px;
+    border-radius: 5px;
+}
+.box img{
+  transform: scale(1.0);
+  transition: all 0.3s ease-out;
+}
+.box:hover img{
+  transform: scale(1.1) translate(-10px);
+  opacity: 0.3;
+
+}
+
+
+button{
+  margin-top: 30px;
+  font-size: 20px;
+  border: none;
+  width: 200px;
+  background-color: teal;
+  color:#FFFF
+}
+.description{
+position: absolute;
+left: 0;
+bottom: 110px;
+width: 100%;
+padding: 15px;
+text-align: center;
+color: white;
+}
+.description h3{
+  font-weight: 700;
+  font-size: 25px;
+  margin: 0 0 20px;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: all 0.3s ease-out;
+
+}
+.description p{
+  transform: translateY(30px);
+  opacity: 0;
+  transition: all 0.3s ease-out 0.2s;
+}
+.description a{
+  color:teal;
+  background: white;
+  display: inline-block;
+  padding:10px 25px;
+  margin-top: 60px;
+  text-decoration: none;
+  border-radius: 20px;
+  transform: translateY(40px);
+  opacity: 0;
+  transition: all 0.3s ease-out 0.4s;
+}
+.description a:hover{
+  background-color: antiquewhite;
+}
+
+.box:hover .description h3{
+  opacity: 1;
+  transform: translateY(0);
+
+}
+.box:hover .description a{
+  opacity: 1;
+  transform: translateY(0);
+
+}
+.box:hover .description p{
+  opacity: 1;
+  transform: translateY(0);
+
+}
